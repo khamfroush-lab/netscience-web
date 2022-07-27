@@ -1,0 +1,30 @@
+/*Nunito Sans*/
+/* Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Oswald&display=swap');
+
+body {
+    color: rgb(51, 51, 51);
+}
+
+body, p, li {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    color: #002880;
+    text-decoration: none;
+}
+
+#title, .title {
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 11pt;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}

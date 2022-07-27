@@ -1,0 +1,785 @@
+[
+  {
+    "id": "hosseinzadeh2021federated",
+    "title": "Communication-Loss Trade-Off in Federated Learning: A Distributed Client Selection Algorithm",
+    "authors": [
+      "Minoo Hosseinzadeh",
+      "Nathaniel Hudson",
+      "Sam Heshmati",
+      "Hana Khamfroush"
+    ],
+    "venue": "2022 IEEE CCNC 2022 WKSHPS: SONATAI: Secure FunctiON ChAining and FederaTed AI",
+    "year": "2022",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": "Mass data generation occurring in the Internet-of-Things (IoT) requires processing to extract meaningful information. Deep learning is commonly used to perform such processing. However, due to the sensitive nature of these data, it is important to consider data privacy. As such, federated learning (FL) has been proposed to address this issue. FL pushes training to the client devices and tasks a central server with aggregating collected model weights to update a global model. However, the transmission of these model weights can be costly, gradually. The trade-off between communicating model weights for aggregation and the loss provided by the global model remains an open problem. In this work, we cast this trade-off problem of client selection in FL as an optimization problem. We then design a Distributed Client Selection (DCS) algorithm that allows client devices to decide to participate in aggregation in hopes of minimizing overall communication cost --- while maintaining low loss. We evaluate the performance of our proposed client selection algorithm against standard FL and a state-of-the-art client selection algorithm, called Power-of-Choice (PoC), using CIFAR-10, FMNIST, and MNIST datasets. Our experimental results confirm that our DCS algorithm is able to closely match the loss provided by the standard FL and PoC, while on average reducing the overall communication cost by nearly 32.67% and 44.71% in comparison to standard FL and PoC, respectively.",
+    "citation": null
+  },
+  {
+    "id": "hosseinzadeh2021joint",
+    "title": "Joint Compression and Offloading Decisions for Deep Learning Services in 3-Tier Edge Systems",
+    "authors": [
+      "Minoo Hosseinzadeh",
+      "Nathaniel Hudson",
+      "Xiaobo Zhao",
+      "Hana Khamfroush",
+      "Daniel E. Lucani"
+    ],
+    "venue": "2021 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN)",
+    "year": "2021",
+    "month": "December",
+    "day": "15",
+    "type": "conference",
+    "keywords": [],
+    "abstract": "Task offloading in edge computing infrastructure remains a challenge for dynamic and complex environments, such as Industrial Internet-of-Things. The hardware resource constraints of edge servers must be explicitly considered to ensure that system resources are not overloaded. Many works have studied task offloading while focusing primarily on ensuring system resilience. However, in the face of deep learning-based services, model performance with respect to loss/accuracy must also be considered. Deep learning services with different implementations may provide varying amounts of loss/accuracy while also being more complex to run inference on. That said, communication latency can be reduced to improve overall Quality-of-Service by employing compression techniques. However, such techniques can also have the side-effect of harming the provided loss/accuracy provided by deep learning-based service. As such, this work studies a joint optimization problem for task offloading decisions in 3-tier edge computing platforms where decisions regarding task offloading are made in tandem with compression decisions. The objective is to optimally offload requests with compression such that the trade-off between latency-accuracy is not greatly jeopardized. We cast this problem as a mixed-integer nonlinear program. Due to its nonlinear nature, we then decompose it into separate sub-problems for offloading and compression. An efficient algorithm is proposed to solve the problem. Empirically, we show that our algorithm attains roughly a 0.958-approximation of the optimal solution provided by a block coordinate descent method for solving the two sub-problems back-to-back.",
+    "citation": null
+  },
+  {
+    "id": "hosseinzadeh2022qos",
+    "title": "QoS-Aware Priority-Based Task Offloading for Deep Learning Services at the Edge",
+    "authors": [
+      "Minoo Hosseinzadeh",
+      "Andrew Wachal",
+      "Hana Khamfroush",
+      "Daniel E. Lucani"
+    ],
+    "venue": "IEEE CCNC",
+    "year": "2022",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [
+      "edge computing",
+      "offloading"
+    ],
+    "abstract": "Emerging Edge Computing (EC) technology has shown promise for many delay-sensitive Deep Learning (DL) based applications of smart cities in terms of improved Quality-of-Service (QoS). EC requires judicious decisions which jointly consider the limited capacity of the edge servers and provided QoS of DL-dependent services. In a smart city environment, tasks may have varying priorities in terms of when and how to serve them; thus, priorities of the tasks have to be considered when making resource management decisions. In this paper, we focus on finding optimal offloading decisions in a three-tier user-edge-cloud architecture while considering different priority classes for the DL-based services and making a trade-off between a task's completion time and the provided accuracy by the DL-based service. We cast the optimization problem as an Integer Linear Program (ILP) where the objective is to maximize a function called gain of system (GoS) defined based on provided QoS and priority of the tasks. We prove the problem is NP-hard. We then propose an efficient offloading algorithm, called PGUS, that is shown to achieve near-optimal results in terms of the provided GoS. Finally, we compare our proposed algorithm, PGUS, with heuristics and a state-of-the-art algorithm, called GUS, using both numerical analysis and real-world implementation. Our results show that PGUS outperforms GUS by a factor of 45% in average in terms of serving the top 25% higher priority classes of the tasks while still keeping the overall percentage of the dropped tasks minimal and the overall gain of system maximized.",
+    "citation": null
+  },
+  {
+    "id": "ashkouti2021dhkmeans",
+    "title": "DHkmeans-&ell;diversity: distributed hierarchical K-means for satisfaction of the &ell;-diversity privacy model using Apache Spark",
+    "authors": [
+      "Farough Ashkouti",
+      "Keyhan Khamforoosh",
+      "Amir Sheikhahmadi",
+      "Hana Khamfroush"
+    ],
+    "venue": "The Journal of Supercomputing",
+    "year": "2021",
+    "month": "July",
+    "day": "05",
+    "type": "journal",
+    "keywords": [
+      "smart grid",
+      "federated learning",
+      "edge computing",
+      "edge intelligence"
+    ],
+    "abstract": "One of the main steps in the data lifecycle is to publish it for data analysts to discover hidden patterns. But, data publishing may lead to unwanted disclosure of personal information and cause privacy problems. Data anonymization techniques preserve privacy models to prevent the disclosure of individuals’ private information in published data. In this paper, a distributed in-memory method is proposed on the Apache Spark framework to preserve the &ell;-diversity privacy model. This method anonymizes large-scale data in a three-phase process, which includes, seed selection, data clustering for &ell;-diversity, and finalizing phase. In this method, a hierarchical kmeans-based data clustering algorithm has been designed for data anonymization. One of the major challenges of anonymization methods is to establish a better trade-off between data utility and privacy. Therefore, for calculating the distance between records and forming more cohesive &ell;diverse-clusters, the authors have designed two Manhattan-based and Euclidean-based distance functions to satisfy the requirements of the &ell;-diversity model. Given the 100-fold speed of the Spark compared to MapReduce, the proposed method is presented using in-memory RDD programming in Apache Spark, to address the runtime, scalability, and performance in large-scale data anonymization as it exists in the previous MapReduce-based algorithms. Our method provides general knowledge to use parallel in-memory computation of Spark in big data anonymization. In experiments, this method has obtained lower information loss and loses about 1% to 2% accuracy and FMeasure criteria; therefore, it establishes a better trade-off than the state-of-the-art MapReduce-based Mondrian methods.",
+    "citation": "@article{ashkouti2021dhkmeans, title={DHkmeans-&ell;diversity: distributed hierarchical K-means for satisfaction of the &ell;-diversity privacy model using Apache Spark},author={Ashkouti, Farough and Khamforoosh, Keyhan and Sheikhahmadi, Amir and Khamfroush, Hana},journal={The Journal of Supercomputing},pages={1--35},year={2021},publisher={Springer}}"
+  },
+  {
+    "id": "hudson2021framework",
+    "title": "A Framework for Edge Intelligent Smart Distribution Grids via Federated Learning",
+    "authors": [
+      "Nathaniel Hudson",
+      "Md Jakir Hossain",
+      "Minoo Hosseinzadeh",
+      "Hana Khamfroush",
+      "Mahshid Rahnamay-Naeini",
+      "Nasir Ghani"
+    ],
+    "venue": "IEEE ICCCN",
+    "year": "2021",
+    "month": "July",
+    "day": null,
+    "type": "conference",
+    "keywords": [
+      "smart grid",
+      "federated learning",
+      "edge computing",
+      "edge intelligence"
+    ],
+    "abstract": "Recent advances in distributed data processing and machine learning provide new opportunities to enable critical, time-sensitive functionalities of smart distribution grids in a secure and reliable fashion. Combining the recent advents of edge computing (EC) and edge intelligence (EI) with existing advanced metering infrastructure (AMI) has the potential to reduce overall communication cost, preserve user privacy, and provide improved situational awareness. In this paper, we provide an overview for how EC and EI can supplement applications relevant to AMI systems. Additionally, using such systems in tandem can enable distributed deep learning frameworks (e.g., federated learning) to empower distributed data processing and intelligent decision making for AMI. Finally, to demonstrate the efficacy of this considered architecture, we approach the non-intrusive load monitoring (NILM) problem using federated learning to train a deep recurrent neural network architecture in a 2-tier and 3-tier manner. In this approach, smart homes locally train a neural network using their metering data and only share the learned model parameters with AMI components for aggregation. Our results show this can reduce communication cost associated with distributed learning, as well as provide an immediate layer of privacy, due to no raw data being communicated to AMI components. Further, we show that FL is able to closely match the model loss provided by standard centralized deep learning where raw data is communicated for centralized training."
+  },
+  {
+    "id": "hudson2021qos",
+    "title": "QoS-Aware Placement of Deep Learning Services on the Edge with Multiple Service Implementations",
+    "authors": [
+      "Nathaniel Hudson",
+      "Hana Khamfroush",
+      "Daniel E. Lucani"
+    ],
+    "venue": "IEEE ICCCN Big Data and Machine Learning for Networking (BDMLN) Workshop",
+    "year": "2021",
+    "month": "July",
+    "day": null,
+    "type": "conference",
+    "keywords": [
+      "edge computing",
+      "deep learning",
+      "quality-of-service",
+      "service placement"
+    ],
+    "abstract": "Mobile edge computing pushes computationally-intensive services closer to the user to provide reduced delay due to physical proximity. This has led many to consider deploying deep learning models on the edge -- commonly known as edge intelligence (EI). EI services can have many model implementations that provide different QoS. For instance, one model can perform inference faster than another (thus reducing latency) while achieving less accuracy when evaluated. In this paper, we study joint service placement and model scheduling of EI services with the goal to maximize Quality-of-Servcice (QoS) for end users where EI services have multiple implementations to serve user requests, each with varying costs and QoS benefits. We cast the problem as an integer linear program and prove that it is NP-hard. We then prove the objective is equivalent to maximizing a monotone increasing, submodular set function and thus can be solved greedily while maintaining a (1-1/e)-approximation guarantee. We then propose two greedy algorithms: one that theoretically guarantees this approximation and another that empirically matches its performance with greater efficiency. Finally, we thoroughly evaluate the proposed algorithm for making placement and scheduling decisions in both synthetic and real-world scenarios against the optimal solution and some baselines. In the real-world case, we consider real machine learning models using the ImageNet 2012 data-set for requests. Our numerical experiments empirically show that our more efficient greedy algorithm is able to approximate the optimal solution with a 0.904 approximation on average, while the next closest baseline achieves a 0.607 approximation on average.",
+    "citation": "@article{hudson2021qos, title={QoS-aware placement of deep learning services on the edge with multiple service implementations}, author={Hudson, Nathaniel and Khamfroush, Hana and Lucani, Daniel E}, journal={arXiv preprint arXiv: 2104.15094}, year={2021}}"
+  },
+  {
+    "id": "hosseinzadeh2021optimal",
+    "title": "Optimal Accuracy-Time Trade-off For Deep Learning Services in Edge Computing Systems",
+    "authors": [
+      "Minoo Hosseinzadeh",
+      "Andrew Wachal",
+      "Hana Khamfroush",
+      "Daniel E. Lucani"
+    ],
+    "venue": "IEEE ICC",
+    "year": "2021",
+    "month": "July",
+    "day": null,
+    "type": "conference",
+    "keywords": [
+      "edge computing",
+      "deep learning",
+      "quality-of-service",
+      "offloading"
+    ],
+    "abstract": "With the increasing demand for computationally intensive services like deep learning tasks, emerging distributed computing platforms such as edge computing (EC) systems are becoming more popular. Edge computing systems have shown promising results in terms of latency reduction compared to the traditional cloud systems. However, their limited processing capacity imposes a trade-off between the potential latency reduction and the achieved accuracy in computationally-intensive services such as deep learning-based services. In this paper, we focus on finding the optimal accuracy-time trade-off for running deep learning services in a three-tier EC platform where several deep learning models with different accuracy levels are available. Specifically, we cast the problem as an Integer Linear Program, where optimal task scheduling decisions are made to maximize overall user satisfaction in terms of accuracy-time trade-off. We prove that our problem is NP-hard and then provide a polynomial constant-time greedy algorithm, called GUS, that is shown to attain near-optimal results. Finally, upon vetting our algorithmic solution through numerical experiments and comparison with a set of heuristics, we deploy it on a testbed implemented to measure for real-world results. The results of both numerical analysis and real-world implementation show that GUS can outperform the baseline heuristics in terms of the average percentage of satisfied users by a factor of at least 50%."
+  },
+  {
+    "id": "farhadi2021service",
+    "title": "Service Placement and Request Scheduling for Data-Intensive Applications in Edge Clouds",
+    "authors": [
+      "Vajihe Farhadi",
+      "Fidan Mehmeti",
+      "Tom La Porta",
+      "Ting He",
+      "Hana Khamfroush",
+      "Shiqiang Wang",
+      "Kevin Chan"
+    ],
+    "venue": "IEEE/ACM Transactions on Networking",
+    "year": "2021",
+    "month": "February",
+    "day": "3",
+    "type": "journal",
+    "keywords": [
+      "edge computing",
+      "request scheduling",
+      "service placement"
+    ],
+    "abstract": "Mobile edge computing provides the opportunity for wireless users to exploit the power of cloud computing without a large communication delay. To serve data-intensive applications (e.g., video analytics, machine learning tasks) from the edge, we need, in addition to computation resources, storage resources for storing server code and data as well as network bandwidth for receiving user-provided data. Moreover, due to time-varying demands, the code and data placement needs to be adjusted over time, which raises concerns of system stability and operation cost. In this paper, we address these issues by proposing a two-time-scale framework that jointly optimizes service (code and data) placement and request scheduling, while considering storage, communication, computation, and budget constraints. First, by analyzing the hardness of various cases, we completely characterize the complexity of our problem. Next, we develop a polynomial-time service placement algorithm by formulating our problem as a set function optimization, which attains a constant-factor approximation under certain conditions. Furthermore, we develop a polynomial-time request scheduling algorithm by computing the maximum flow in a carefully constructed auxiliary graph, which satisfies hard resource constraints and is provably optimal in the special case where requests have homogeneous resource demands. Extensive synthetic and trace-driven simulations show that the proposed algorithms achieve 90% of the optimal performance."
+  },
+  {
+    "id": "ogholbake2021modified",
+    "title": "A Modified SEIR Model for the Spread of COVID-19 Considering Different Vaccine Types",
+    "authors": [
+      "Aram Ansary Ogholbake",
+      "Hana Khamfroush"
+    ],
+    "venue": "arXiv preprint > Quantitative Biology",
+    "year": "2021",
+    "month": "June",
+    "day": "6",
+    "type": "preprint",
+    "keywords": [
+      "computational epidimiology",
+      "diffusion processes"
+    ],
+    "abstract": "The COVID-19 pandemic has influenced the lives of people globally. In the past year many researchers have proposed different models and approaches to explore in what ways the spread of the disease could be mitigated. One of the models that have been used a great deal is the Susceptible-Exposed-Infectious-Recovered (SEIR) model. Some researchers have modified the traditional SEIR model, and proposed new versions of it. However, to the best of our knowledge, the state-of-the-art papers have not considered the effect of different vaccine types, meaning single shot and double shot vaccines, in their SEIR model. In this paper, we propose a modified version of the SEIR model which takes into account the effect of different vaccine types. We compare how different policies for the administration of the vaccine can influence the rate at which people are exposed to the disease, get infected, recover, and pass away. Our results suggest that taking the double shot vaccine such as Pfizer-BioNTech and Moderna does a better job at mitigating the spread and fatality rate of the disease compared to the single shot vaccine, due to its higher efficacy.",
+    "citation": "@article{ogholbake2021modified, title={A Modified SEIR Model for the Spread of COVID-19 Considering Different Vaccine Types}, author={Ogholbake, Aram Ansary and Khamfroush, Hana}, journal={arXiv preprint arXiv:2106.08820}, year={2021}}"
+  },
+  {
+    "id": "hudson2020behavioral",
+    "title": "Behavioral information diffusion for opinion maximization in online social networks",
+    "authors": [
+      "Nathaniel Hudson",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE Transactions on Network Science &amp; Engineering",
+    "year": "2020",
+    "month": "October",
+    "day": "27",
+    "type": "journal",
+    "keywords": [
+      "social networks",
+      "opinion diffusion",
+      "influence maximization"
+    ],
+    "abstract": "Online social networks provide a platform to diffuse information and influence people's opinion. Conventional models for information diffusion do not take into account the specifics of each users’ personality, behavior, and their opinion. This work adopts the “Big Five” model from the social sciences to ascribe each user node with a personality. We propose a behavioral independent cascade (BIC) model that considers the personalities and opinions of user nodes when computing propagation probabilities for diffusion. We use this model to study the opinion maximization (OM) problem and prove it is NP-hard under our BIC model. Under the BIC model, we show that the objective function of the proposed OM problem is not submodular. We then propose an algorithm to solve the OM problem in linear-time based on a state-of-the-art influence maximization (IM) algorithm. We run extensive simulations under four cases where initial opinion is distributed in polarized/non-polarized and community/non-community cases. We find that when communities are polarized, activating a large number of nodes is ineffective towards maximizing opinion. Further, we find that our proposed algorithm outperforms state-of-the-art IM algorithms in terms of maximizing opinion in uniform opinion distribution—despite activating fewer nodes to be spreaders."
+  },
+  {
+    "id": "bartolini2020fundamental",
+    "title": "On Fundamental Bounds on Failure Identifiability by Boolean Network Tomography",
+    "authors": [
+      "Novella Bartolini",
+      "Ting He",
+      "Viviana Arrigoni",
+      "Annalisa Massini",
+      "Federico Trombetti",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE/ACM Transactions on Networking",
+    "year": "2020",
+    "month": "February",
+    "day": "19",
+    "type": "journal",
+    "keywords": [],
+    "abstract": "Boolean network tomography is a powerful tool to infer the state (working/failed) of individual nodes from path-level measurements obtained by edge-nodes. We consider the problem of optimizing the capability of identifying network failures through the design of monitoring schemes. Finding an optimal solution is NP-hard and a large body of work has been devoted to heuristic approaches providing lower bounds. Unlike previous works, we provide upper bounds on the maximum number of identifiable nodes, given the number of monitoring paths and different constraints on the network topology, the routing scheme, and the maximum path length. These upper bounds represent a fundamental limit on identifiability of failures via Boolean network tomography. Our analysis provides insights on how to design topologies and related monitoring schemes to achieve the maximum identifiability under various network settings. Through analysis and experiments we demonstrate the tightness of the bounds and efficacy of the design insights for engineered as well as real networks."
+  },
+  {
+    "id": "zhao2020improving",
+    "title": "Improving the Accuracy-Latency Trade-off of Edge-Cloud Computation Offloading for Deep Learning Services",
+    "authors": [
+      "Xiaobo Zhao",
+      "Minoo Hosseinzadeh",
+      "Nathaniel Hudson",
+      "Hana Khamfroush",
+      "Daniel E. Lucani"
+    ],
+    "venue": "IEEE GLOBECOM Workshops",
+    "year": "2020",
+    "month": "December",
+    "day": "7",
+    "type": "conference",
+    "keywords": [
+      "edge computing",
+      "deep learning"
+    ],
+    "abstract": "Offloading tasks to the edge or the Cloud has the potential to improve accuracy of classification and detection tasks as more powerful hardware and machine learning models can be used. The downside is the added delay introduced for sending the data to the Edge/Cloud. In delay-sensitive applications, it is usually necessary to strike a balance between accuracy and latency. However, the state of the art typically considers offloading all-or-nothing decisions, e.g., process locally or send all available data to the Edge (Cloud). Our goal is to expand the options in the accuracy-latency trade-off by allowing the source to send a fraction of the total data for processing. We evaluate the performance of image classifiers when faced with images that have been purposely reduced in quality in order to reduce traffic costs. Using three common models (SqueezeNet, GoogleNet, ResNet) and two data sets (Caltech101, ImageNet) we show that the Gompertz function provides a good approximation to determine the accuracy of a model given the fraction of the data of the image that is actually conveyed to the model. We formulate the offloading decision process using this new flexibility and show that a better overall accuracy-latency tradeoff is attained: 58% traffic reduction, 25% latency reduction, as well as 12% accuracy improvement."
+  },
+  {
+    "id": "adeniran2020edge",
+    "title": "Edge Layer Design and Optimization for Smart Grids",
+    "authors": [
+      "Adetola Adeniran",
+      "Md Abul Hasnat",
+      "Minoo Hosseinzadeh",
+      "Hana Khamfroush",
+      "Mahshid Rahnamay-Naeini"
+    ],
+    "venue": "IEEE SmartGridComm",
+    "year": "2020",
+    "month": "December",
+    "day": "30",
+    "type": "conference",
+    "keywords": [
+      "smart grid",
+      "edge computing"
+    ],
+    "abstract": "The emergence of modern monitoring, communication, computation, and control equipment into power systems has made them evolve into smart grids that can be thought of as the electric grid of things. This evolution has enhanced the efficiency of the power systems through the availability of a large volume of system data that can help with system functions nevertheless, it has intensified the communication and computation burden on these systems. While many such computations were traditionally deployed in central servers, new technologies such as edge computing can provide unique opportunities to address some of the computational challenges and improve the responsiveness of the system by processing data locally. In this paper, an edge enabled smart grid architecture is presented. The edge layer for the smart grid is designed through various optimization formulations to identify the placement of edge servers and their connectivity structure to the Phasor Measurement Units in the system. Various factors affecting the design, such as the geographical and resource constraints as well as the communication technology considerations have been incorporated in the formulations and evaluated using the IEEE 118 bus system."
+  },
+  {
+    "id": "hudson2020smart",
+    "title": "Smart Advertisement for Maximal Clicks in Online Social Networks Without User Data",
+    "authors": [
+      "Nathaniel Hudson",
+      "Hana Khamfroush",
+      "Brent Harrison",
+      "Adam Craig"
+    ],
+    "venue": "IEEE SMARTCOMP",
+    "year": "2020",
+    "month": "November",
+    "day": "06",
+    "type": "conference",
+    "keywords": [
+      "social networks",
+      "machine learning"
+    ],
+    "abstract": "Smart cities are a growing paradigm in the design of systems that interact with one another for informed and efficient decision making, empowered by data and technology, of resources in a city. The diffusion of information to citizens in a smart city will rely on social trends and smart advertisement. Online social networks (OSNs) are prominent and increasingly important platforms to spread information, observe social trends, and advertise new products. To maximize the benefits of such platforms in sharing information, many groups invest in finding ways to maximize the expected number of clicks as a proxy of these platform's performance. As such, the study of click-through rate (CTR) prediction of advertisements, in environments like online social media, is of much interest. Prior works build machine learning (ML) using user-specific data to classify whether a user will click on an advertisement or not. For our work, we consider a large set of Facebook advertisement data (with no user data) and categorize targeted interests into thematic groups we call conceptual nodes. ML models are trained using the advertisement data to perform CTR prediction with conceptual node combinations. We then cast the problem of finding the optimal combination of conceptual nodes as an optimization problem. Given a certain budget k, we are interested in finding the optimal combination of conceptual nodes that maximize the CTR. We discuss the hardness and possible NP-hardness of the optimization problem. Then, we propose a greedy algorithm and a genetic algorithm to find near-optimal combinations of conceptual nodes in polynomial time, with the genetic algorithm nearly matching the optimal solution. We observe that simple ML models can exhibit the high Pearson correlation coefficients w.r.t. click predictions and real click values. Additionally, we find that the conceptual nodes of “politics”, “celebrity”, and “organization” are notably more influential than other considered conceptual nodes."
+  },
+  {
+    "id": "felemban2019picsys",
+    "title": "PicSys: Energy-Efficient Fast Image Search on Distributed Mobile Networks",
+    "authors": [
+      "Noor Felemban",
+      "Fidan Mehmeti",
+      "Hana Khamfroush",
+      "Zongqing Lu",
+      "Swati Rallapalli",
+      "Kevin S. Chan",
+      "Tom La Porta"
+    ],
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2019",
+    "month": "December",
+    "day": "31",
+    "type": "journal",
+    "keywords": [
+      "mobile networks",
+      "mobile computing",
+      "deep learning"
+    ],
+    "abstract": "Mobile devices collect a large amount of visual data that are useful for many applications. Searching for an object of interest over a network of mobile devices can aid human analysts in a variety of situations. However, processing the information on these devices is a challenge owing to the high computational complexity of the state-of-the-art computer vision algorithms that primarily rely on Convolutional Neural Networks (CNNs). Thus, this paper builds PicSys, a system that enables answering visual search queries on a mobile network. The objective of the system is to minimize the maximum completion time over all devices while taking into account the energy consumption of mobile devices as well. First, PicSys carefully divides the computation into multiple filtering stages, such that only a small percentage of images need to run the entire CNN pipeline. Splitting such CNN computation into multiple stages requires understanding the intermediate CNN features and systematically trading off accuracy for the computation speed. Second, PicSys determines where to run each of the stages of the multi-stage pipeline to fully utilize the available resources. Finally, through extensive experimentation, system implementation, and simulation, we show that PicSys performance is close to optimal and significantly outperforms other standard algorithms."
+  },
+  {
+    "id": "khamfroush2019influence",
+    "title": "Influence spread in two-layer interdependent networks: designed single-layer or random two-layer initial spreaders?",
+    "authors": [
+      "Hana Khamfroush",
+      "Nathaniel Hudson",
+      "Samuel Iloo",
+      "Mahshid Rahnamay-Naeini"
+    ],
+    "venue": "Springer Applied Network Science",
+    "year": "2019",
+    "month": "June",
+    "day": "25",
+    "type": "journal",
+    "keywords": [
+      "interdependent networks",
+      "influence spread",
+      "phenomena propagation"
+    ],
+    "abstract": "Influence spread in multi-layer interdependent networks (M-IDN) has been studied in the last few years; however, prior works mostly focused on the spread that is initiated in a single layer of an M-IDN. In real world scenarios, influence spread can happen concurrently among many or all components making up the topology of an M-IDN. This paper investigates the effectiveness of different influence spread strategies in M-IDNs by providing a comprehensive analysis of the time evolution of influence propagation given different initial spreader strategies. For this study we consider a two-layer interdependent network and a general probabilistic threshold influence spread model to evaluate the evolution of influence spread over time. For a given coupling scenario, we tested multiple interdependent topologies, composed of layers A and B, against four cases of initial spreader selection: (1) random initial spreaders in A, (2) random initial spreaders in both A and B, (3) targeted initial spreaders using degree centrality in A, and (4) targeted initial spreaders using degree centrality in both A and B. Our results indicate that the effectiveness of influence spread highly depends on network topologies, the way they are coupled, and our knowledge of the network structure — thus an initial spread starting in only A can be as effective as initial spread starting in both A and B concurrently. Similarly, random initial spread in multiple layers of an interdependent system can be more severe than a comparable initial spread in a single layer. Our results can be easily extended to different types of event propagation in multi-layer interdependent networks such as information/misinformation propagation in online social networks, disease propagation in offline social networks, and failure/attack propagation in cyber-physical systems."
+  },
+  {
+    "id": "nakarmi2019critical",
+    "title": "Critical Component Analysis in Cascading Failures for Power Grids Using Community Structures in Interaction Graphs",
+    "authors": [
+      "Upama Nakarmi",
+      "Mahshid Rahnamay-Naeini",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE Transactions on Network Science &amp; Engineering",
+    "year": "2019",
+    "month": "March",
+    "day": "08",
+    "type": "journal",
+    "keywords": [],
+    "abstract": "Cascading phenomena have been studied extensively in various networks. Particularly, it has been shown that the community structures in networks impact their cascade processes. However, the role of community structures in cascading failures in power grids have not been studied heretofore. In this paper, cascading failures in power grids are studied using interaction graphs. Key evidence has been provided that the community structures in interaction graphs bear critical information about the cascade process and the role of system components in cascading failures in power grids. Furthermore, a centrality measure based on the community structures is proposed to identify critical components of the system, which their protection can help in containing failures within a community and prevent the propagation of failures to large sections of the power grid. Various criticality evaluation techniques, including data driven, epidemic simulation based, power system simulation based, and graph based, have been used to verify the importance of the identified critical components in the cascade process and compare them with those identified by traditional centrality measures. Moreover, it has been shown that the loading level of the power grid impacts the interaction graph and consequently, the community structure and criticality of the components in the cascade process."
+  },
+  {
+    "id": "tootaghaj2018progressive",
+    "title": "On progressive network recovery from massive failures under uncertainty",
+    "authors": [
+      "Diman Zad Tootaghaj",
+      "Novella Bartolini",
+      "Hana Khamfroush",
+      "Thomas La Porta"
+    ],
+    "venue": "IEEE Transactions on Network &amp; Service Management",
+    "year": "2018",
+    "month": "November",
+    "day": null,
+    "type": "journal",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "tootaghaj2018mitigation",
+    "title": "Mitigation and recovery from cascading failures in interdependent networks under uncertainty",
+    "authors": [
+      "Diman Zad Tootaghaj",
+      "Novella Bartolini",
+      "Hana Khamfroush",
+      "Ting He",
+      "Nilanjan Ray Chaudhuri",
+      "Thomas La Porta"
+    ],
+    "venue": "IEEE Transactions on Control of Network Systems",
+    "year": "2018",
+    "month": "June",
+    "day": "01",
+    "type": "journal",
+    "keywords": [],
+    "abstract": "The interdependence of multiple networks makes today's infrastructures more vulnerable to failures. Prior works mainly focused on robust network design and recovery strategies after failures, given complete knowledge of failure location. Nevertheless, in real-world scenarios, the location of failures might be unknown or only partially known. In this paper, we focus on cascading failures involving the power grid and its communication network with imprecision in failure assessment. We consider a model where functionality of the power grid and its failure assessment rely on the operation of a monitoring system and vice versa. We address ongoing cascading failures with a twofold approach: first, once a cascading failure is detected, we limit further propagation by redispatching generation and shedding loads; and second, we formulate a recovery plan to maximize the total amount of load served during the recovery intervention. We performed extensive simulations on real network topologies showing the effectiveness of the proposed approach in terms of number of disrupted power lines and total served load."
+  },
+  {
+    "id": "khamfroush2016propagation",
+    "title": "On Propagation of Phenomena in Interdependent Networks",
+    "authors": [
+      "Hana Khamfroush",
+      "Novella Bartolini",
+      "Thomas La Porta",
+      "Ananthram Swami",
+      "Justin Dillman"
+    ],
+    "venue": "IEEE Transactions on Network Science &amp; Engineering",
+    "year": "2016",
+    "month": "August",
+    "day": "12",
+    "type": "journal",
+    "keywords": [],
+    "abstract": "When multiple networks are interconnected because of mutual service interdependence, propagation of phenomena across the networks is likely to occur. Depending on the type of networks and phenomenon, the propagation may be a desired effect, such as the spread of information or consensus in a social network, or an unwanted one, such as the propagation of a virus or a cascade of failures in a communication or service network. In this paper, we propose a general analytic model that captures multiple types of dependency and of interaction among nodes of interdependent networks, that may cause the propagation of phenomena. The above model is used to evaluate the effects of different diffusion models in a wide range of network topologies, including different models of random graphs and real networks. We propose a new centrality metric and compare it to more traditional approaches to assess the impact of individual network nodes in the propagation. We propose guidelines to design networks in which the diffusion is either a desired phenomenon or an unwanted one, and consequently must be fostered or prevented, respectively. We performed extensive simulations to extend our study to large networks and to show the benefits of the proposed design solutions."
+  },
+  {
+    "id": "pahlevani2016network",
+    "title": "Network Coding for Hop-by-Hop Communication Enhancement in Multi-hop Networks",
+    "authors": [
+      "Peyman Pahlevani",
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "Morten V. Pederson",
+      "Frank H. P. Fitzek"
+    ],
+    "venue": "Elsevier Computer Networks",
+    "year": "2016",
+    "month": "May",
+    "day": "26",
+    "type": "journal",
+    "keywords": [],
+    "abstract": "In our recent study, we introduced the PlayNCool protocol that increases the throughput of the wireless networks by enabling a helper node to strengthen the communication link between two neighboring nodes and using random linear network coding. This paper focuses on design and implementation advantages of the PlayNCool protocol in a real environment of wireless mesh networks. We provide a detailed protocol to implement PlayNCool that is independent from the other protocols in the current computer network stack. PlayNCool performance is evaluated using NS–3 simulations and real-life measurements using Aalborg University’s Raspberry Pi test-bed. Our results show that selecting the best policy to activate the helper node is a key to guarantee the performance of PlayNCool protocol. We also study the effect of neighbor nodes in the performance of PlayNCool. Using a helper in presence of active neighbors is useful even if the channel from helper to destination is not better than the channel between sender and destination. PlayNCool increases the gain of end-to-end communication by two-fold or more while maintaining compatibility to standard wireless ad-hoc routing protocols."
+  },
+  {
+    "id": "khamfroush2015optimal",
+    "title": "On Optimal Policies for Network Coded Cooperation: Theory and Implementation",
+    "authors": [
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "Peyman Pahlevani",
+      "João Barros"
+    ],
+    "venue": "IEEE Journal on Selected Areas in Communication (JSAC)",
+    "year": "2015",
+    "month": null,
+    "day": null,
+    "type": "journal",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "khamfroush2014network",
+    "title": "Network-Coded Cooperation Over Time-Varying Channels",
+    "authors": [
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "João Barros",
+      "Peyman Pahlevani"
+    ],
+    "venue": "IEEE Transactions on Communications",
+    "year": "2014",
+    "month": null,
+    "day": null,
+    "type": "journal",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "hasnat2019situational",
+    "title": "Situational awareness using edge-computing enabled Internet-of-Things for smart grids",
+    "authors": [
+      "Md Abul Hasnat",
+      "Md Jakir Hossain",
+      "Adetola Adeniran",
+      "Mahshid Rahnamay-Naeini",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE GLOBECOM Workshops",
+    "year": "2019",
+    "month": "December",
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "turner2020meeting",
+    "title": "Meeting Users’ QoS in a Edge-to-Cloud Platform via Optimally Placing Services and Scheduling Tasks",
+    "authors": [
+      "Matthew Turner",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE ICNC CNC Workshop",
+    "year": "2020",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "hosseinzadeh2019reliable",
+    "title": "Reliable and Efficient Mobile Edge Computing for Dynamic IoT Systems",
+    "authors": [
+      "Minoo Hosseinzadeh",
+      "Hana Khamfroush"
+    ],
+    "venue": "ACM/IEEE SEC PhD Forum",
+    "year": "2019",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "hufbaer2020proximity",
+    "title": "A Proximity-Based Generative Model for Online Social Network Topologies",
+    "authors": [
+      "Emory Hufbaer",
+      "Nathaniel Hudson",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE ICNC",
+    "year": "2020",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "farhadi2019service",
+    "title": "Service Placement and Request Scheduling for Data-intensive Applications in Edge Clouds",
+    "authors": [
+      "Vajiheh Farhadi",
+      "Fidan Mehmeti",
+      "Thomas La Porta",
+      "Ting He",
+      "Hana Khamfroush",
+      "Shiqiang Wang",
+      "Kevin S. Chan"
+    ],
+    "venue": "IEEE INFOCOM",
+    "year": "2019",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "hudson2019effectiveness",
+    "title": "On the effectiveness of standard centrality metrics for interdependent networks",
+    "authors": [
+      "Nathaniel Hudson",
+      "Matthew Turner",
+      "Asare Nkansah",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE ICNC",
+    "year": "2019",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "turner2018qos",
+    "title": "QoS-Aware Service Placement and Task Scheduling in a Three-Tiered Edge-to-Cloud System",
+    "authors": [
+      "Matthew Turner",
+      "Hana Khamfroush"
+    ],
+    "venue": "ACM/IEEE SEC PhD Forum",
+    "year": "2018",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "khamfroush2018vulnerability",
+    "title": "Vulnerability of Interdependent Infrastructures Under Random Attacks",
+    "authors": [
+      "Hana Khamfroush",
+      "Samuel Iloo",
+      "Mahshid Rahnamay-Naeini"
+    ],
+    "venue": "ACM SIGMETRICS Workshops",
+    "year": "2018",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "he2018hard",
+    "title": "It’s Hard to Share: Joint Service Placement and Request Scheduling in Edge Clouds with Sharable and Non-sharable Resources",
+    "authors": [
+      "Ting He",
+      "Hana Khamfroush",
+      "Shiqiang Wang",
+      "Tom La Porta",
+      "Sebastian Stein"
+    ],
+    "venue": "IEEE ICDCS",
+    "year": "2018",
+    "month": "July",
+    "day": "23",
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "tootaghaj2017controlling",
+    "title": "Controlling Cascading Failures in Interdependent Networks Under Uncertain Knowledge of Damage",
+    "authors": [
+      "Diman Zad Tootaghaj",
+      "Novella Bartolini",
+      "Hana Khamfroush",
+      "Thomas La Porta"
+    ],
+    "venue": "IEEE SRDS",
+    "year": "2017",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": null,
+    "title": "Network Recovery from Massive Failures under Uncertain Knowledge of Damages",
+    "authors": [
+      "Diman Zad Tootaghaj",
+      "Hana Khamfroush",
+      "Novella Bartolini",
+      "Stefano Ciavarella",
+      "Seamus Hayes",
+      "Thomas La Porta"
+    ],
+    "venue": "IFIP Networking",
+    "year": "2017",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "bartolini2017fundamental",
+    "title": "Fundamental Limits of Failure Identiability by Boolean Network Tomography",
+    "authors": [
+      "Novella Bartolini",
+      "Ting He",
+      "Hana Khamfroush"
+    ],
+    "venue": "IEEE INFOCOM",
+    "year": "2017",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null,
+    "notes": "Acceptance Rate 20%"
+  },
+  {
+    "id": "ciavarella2017",
+    "title": "Progressive Damage Assessment and Network Recovery after Massive Failures",
+    "authors": [
+      "Stefano Ciavarella",
+      "Novella Bartolini",
+      "Hana Khamfroush",
+      "Thomas La Porta"
+    ],
+    "venue": "IEEE INFOCOM",
+    "year": "2017",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null,
+    "notes": "Acceptance Rate 20%"
+  },
+  {
+    "id": "he2016service",
+    "title": "Service Placement for Detecting and Localizing Failures Using End-to-End Observations",
+    "authors": [
+      "Ting He",
+      "Novella Bartolini",
+      "Hana Khamfroush",
+      "Injung Kim",
+      "Liang Ma",
+      "Thomas La Porta"
+    ],
+    "venue": "IEEE ICDCS",
+    "year": "2016",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "khamfroush2015relay",
+    "title": "Relay-assisted Network Coding Multicast in the Presence of Neighbors",
+    "authors": [
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "Peyman Pahlevani",
+      "Frank H. P. Fitzek",
+      "João Barros"
+    ],
+    "venue": "VDE European Wireless",
+    "year": "2015",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "khamfroush2014network",
+    "title": "Network coding for wireless cooperative networks: Simple rules, near-optimal delay",
+    "authors": [
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "João Barros"
+    ],
+    "venue": "IEEE ICC",
+    "year": "2014",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "khamfroush2014coded",
+    "title": "On the coded packet relay network in the presence of neighbors: Benefits of speaking in a crowded room",
+    "authors": [
+      "Hana Khamfroush",
+      "Peyman Pahlevani",
+      "Daniel E. Lucani",
+      "Martin Hundebøll",
+      "Frank H. P. Fitzek"
+    ],
+    "venue": "IEEE ICC",
+    "year": "2014",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  },
+  {
+    "id": "khamfroush2013minimizing",
+    "title": "Minimizing The Completion Time Of A Wireless Cooperative Network Using Network Coding",
+    "authors": [
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "João Barros"
+    ],
+    "venue": "IEEE PIMRC",
+    "year": "2013",
+    "month": "November",
+    "day": "25",
+    "type": "conference",
+    "keywords": [],
+    "abstract": "We consider the performance of network coding for a wireless cooperative network in which a source wants to transmit M data packets to two receivers. We assume that receivers can share their received packets with each other or simply wait to receive the packets from the source. The problem of finding an optimum packet transmission policy that minimizes the completion time in such a network is solved by modeling the problem as a Markov Decision Process (MDP). Our analysis is useful for a series of network coding and forwarding schemes with or without feedback. Our results show that the optimal network coding solution in terms of completion time, outperforms broadcasting with network coding by a factor of 2.13 and outperforms forwarding mechanisms by a factor of 6.1. Beyond computing the optimal completion time, we identify the critical decision policies derived from the MDP solution."
+  },
+  {
+    "id": "khamfroush2011geocode",
+    "title": "GeoCode: A geographic coding-aware communication protocol",
+    "authors": [
+      "Hana Khamfroush",
+      "Daniel E. Lucani",
+      "João Barros"
+    ],
+    "venue": "IEEE ITSC",
+    "year": "2011",
+    "month": null,
+    "day": null,
+    "type": "conference",
+    "keywords": [],
+    "abstract": null
+  }
+]
