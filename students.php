@@ -62,7 +62,7 @@
     <h1 class="title">Alumni</h1>
     <ul>
         <li class="mb-3">
-            <a href="http://cs.uky.edu/~nchu222" target="_blank">Nathaniel Hudson</a> - Graduated in Spring 2022 <br>
+            <a href="https://nathaniel-hudson.github.io/" target="_blank">Nathaniel Hudson</a> - Graduated in Spring 2022 <br>
             Dissertation: <i>Smart Decision-Making via Edge Intelligence for Smart Cities</i><br>
             Doctor of Philosophy, University of Kentucky
         </li>
